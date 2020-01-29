@@ -1,8 +1,6 @@
 package com.microsoft.azure.helium.health;
 
 import com.azure.data.cosmos.*;
-//import com.microsoft.azure.helium.app.movie.Movie;
-//import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -11,7 +9,6 @@ import org.springframework.boot.info.BuildProperties;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
-//import reactor.core.publisher.Mono;
 
 import java.util.*;
 

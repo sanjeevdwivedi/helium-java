@@ -50,12 +50,10 @@ public class ActorsRepositoryIT {
 
     @Test
     public void findByTextSearchShouldQueryActorsTextField(){
-        // Removing until I have time to find a solution to remove the warning on unchecked conversion or fix the problem.
-        // Issue: Type safety: The expression of type Page needs unchecked conversion to conform to Page<Actor>Java(16777748)
-/*
+
         Page<Actor> pActors = Mockito.mock(Page.class);
         Mockito.when(repository.findByTextSearchContainingOrderByActorId(anyString(), any())).thenReturn(pActors);
         assertNotNull(pActors);
-*/
+
     }
 }

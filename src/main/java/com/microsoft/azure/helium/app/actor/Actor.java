@@ -13,7 +13,7 @@ import net.minidev.json.annotate.JsonIgnore;
 import org.springframework.data.annotation.Id;
 
 import lombok.AllArgsConstructor;
-//import lombok.EqualsAndHashCode;
+
 import lombok.Getter;
 
 /**

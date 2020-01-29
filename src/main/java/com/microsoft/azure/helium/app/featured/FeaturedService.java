@@ -4,17 +4,12 @@ import com.microsoft.azure.helium.app.movie.Movie;
 import com.microsoft.azure.helium.app.movie.MoviesRepository;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
-/*
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.util.StringUtils;
-*/
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.Optional;
+
 import java.util.Random;
 
 /**

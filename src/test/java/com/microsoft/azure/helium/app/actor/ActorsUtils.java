@@ -1,16 +1,12 @@
 package com.microsoft.azure.helium.app.actor;
 
 import java.io.File;
-//import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-//import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.microsoft.azure.helium.app.movie.Movie;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;
 

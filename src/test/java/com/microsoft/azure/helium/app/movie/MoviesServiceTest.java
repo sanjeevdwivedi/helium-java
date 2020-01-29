@@ -1,10 +1,6 @@
 package com.microsoft.azure.helium.app.movie;
 
-//import static com.microsoft.azure.helium.app.movie.MoviesUtils.expectedMovieResponse;
-//import static com.microsoft.azure.helium.app.movie.MoviesUtils.generateMovies;
-//import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.Assert.*;
-//import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;

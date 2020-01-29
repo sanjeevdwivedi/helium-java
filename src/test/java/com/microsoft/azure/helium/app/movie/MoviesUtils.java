@@ -3,12 +3,10 @@ package com.microsoft.azure.helium.app.movie;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-//import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.microsoft.azure.helium.app.actor.Actor;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;
 

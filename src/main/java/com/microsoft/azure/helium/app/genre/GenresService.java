@@ -1,15 +1,12 @@
 package com.microsoft.azure.helium.app.genre;
 
 import java.util.List;
-//import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-//import com.microsoft.azure.helium.app.movie.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-//import org.springframework.util.StringUtils;
 
 /**
  * GenresService

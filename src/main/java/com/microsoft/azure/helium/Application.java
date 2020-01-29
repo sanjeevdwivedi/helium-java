@@ -1,6 +1,6 @@
 package com.microsoft.azure.helium;
 
-//import com.microsoft.applicationinsights.TelemetryConfiguration;
+import com.microsoft.applicationinsights.TelemetryConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class Application implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-		//TelemetryConfiguration configuration = TelemetryConfiguration.getActive();
+		TelemetryConfiguration configuration = TelemetryConfiguration.getActive();
 	}
 
 	public void run(String... varl) throws Exception {

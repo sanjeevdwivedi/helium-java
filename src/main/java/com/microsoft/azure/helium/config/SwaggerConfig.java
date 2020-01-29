@@ -1,10 +1,7 @@
 package com.microsoft.azure.helium.config;
 
 import com.google.common.base.Predicates;
-//import io.swagger.annotations.Api;
-//import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.boot.info.BuildProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;

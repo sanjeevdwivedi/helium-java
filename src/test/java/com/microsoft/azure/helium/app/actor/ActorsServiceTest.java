@@ -1,13 +1,9 @@
 package com.microsoft.azure.helium.app.actor;
 
-//import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
-//import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-//import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
-//import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
