@@ -5,11 +5,11 @@ import java.util.Optional;
 
 import com.azure.data.cosmos.CosmosClientException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
+//import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.StringUtils;
+//import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -48,7 +48,7 @@ public class MoviesController {
             @ApiParam(value = "page size (1000 max)", required = false , defaultValue = "100") @RequestParam Optional<Integer>  pagesize
     ) throws CosmosClientException {
 
-        final Sort sort = Sort.by(Sort.Direction.ASC, "movieId");
+        //final Sort sort = Sort.by(Sort.Direction.ASC, "movieId");
 
         List<Movie> movies = service.getAllMovies(q, genre, year, rating, toprated, actorid, pagesize, pagenumber);
         return new ResponseEntity<>(movies, HttpStatus.OK);

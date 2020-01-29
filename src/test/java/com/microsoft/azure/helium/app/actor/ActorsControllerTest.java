@@ -1,8 +1,8 @@
 package com.microsoft.azure.helium.app.actor;
 
-import static com.microsoft.azure.helium.app.actor.ActorsUtils.expectedActorResponse;
+//import static com.microsoft.azure.helium.app.actor.ActorsUtils.expectedActorResponse;
 import static com.microsoft.azure.helium.app.actor.ActorsUtils.generateActors;
-import static org.hamcrest.Matchers.hasSize;
+//import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
@@ -21,13 +21,13 @@ import java.util.UUID;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.skyscreamer.jsonassert.JSONAssert;
+//import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
+//import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 
 /**
@@ -48,13 +48,14 @@ public class ActorsControllerTest {
 
         List<Actor> mockActors = generateActors();
         when(service.getAllActors(any(), any(), any(), any())).thenReturn(mockActors);
-        String expected = expectedActorResponse();
-        MvcResult result = this.mockMvc
+        //String expected = expectedActorResponse();
+        //MvcResult result = 
+        this.mockMvc
                 .perform(get("/api/actors").param("pageNumber", "1").param("pageSize", "100"))
                 .andExpect(status().isOk())
                 .andDo(print())
                 .andReturn();
-
+        
     }
 
     @Test

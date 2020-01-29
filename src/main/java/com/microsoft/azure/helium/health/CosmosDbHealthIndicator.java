@@ -1,8 +1,8 @@
 package com.microsoft.azure.helium.health;
 
 import com.azure.data.cosmos.*;
-import com.microsoft.azure.helium.app.movie.Movie;
-import io.swagger.models.auth.In;
+//import com.microsoft.azure.helium.app.movie.Movie;
+//import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -11,7 +11,7 @@ import org.springframework.boot.info.BuildProperties;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
+//import reactor.core.publisher.Mono;
 
 import java.util.*;
 
@@ -55,7 +55,7 @@ public class CosmosDbHealthIndicator extends AbstractHealthIndicator {
 	protected HashMap<String, Integer > getStatusCode(String dbName) throws CosmosClientException {
 
 		System.out.println("databaselink " + documentClient.getDatabase(dbName).id());
-		CosmosContainer container =  documentClient.getDatabase(dbName).getContainer("movies");
+		//CosmosContainer container =  documentClient.getDatabase(dbName).getContainer("movies");
 
 		CosmosDatabaseResponse response = documentClient.getDatabase(dbName).read().block();
 		HashMap<String, Integer> resultDetails = new HashMap<>();
@@ -64,7 +64,7 @@ public class CosmosDbHealthIndicator extends AbstractHealthIndicator {
 
 
 		resultDetails.put("status", response.statusCode());
-		String collectionMoviesLink = String.format("/dbs/%s/colls/%s", "imdb","movies");
+		//String collectionMoviesLink = String.format("/dbs/%s/colls/%s", "imdb","movies");
 
 		Flux<FeedResponse<CosmosItemProperties>> movieResponse =  documentClient.getDatabase(dbName).getContainer("movies").queryItems("SELECT VALUE COUNT(1) FROM c", queryOptions);
 		if(movieResponse !=null && movieResponse.blockLast().results().size() > 0 && movieResponse.blockLast().results().get(0) != null) {

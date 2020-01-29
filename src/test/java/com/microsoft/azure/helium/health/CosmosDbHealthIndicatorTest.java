@@ -5,25 +5,25 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.anyString;
 
-import com.microsoft.azure.helium.app.movie.Movie;
-import com.microsoft.azure.helium.config.BuildConfig;
 import com.microsoft.azure.helium.utils.IntegrationTestsUtils;
+//import com.microsoft.azure.helium.app.movie.Movie;
+//import com.microsoft.azure.helium.config.BuildConfig;
 
-import org.junit.Ignore;
+//import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
+//import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.Status;
 import org.springframework.boot.actuate.health.Health.Builder;
-import org.springframework.boot.test.mock.mockito.MockBean;
+//import org.springframework.boot.test.mock.mockito.MockBean;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+//import java.util.List;
 
 /**
  * CosmosDbHealthIndicatorTest

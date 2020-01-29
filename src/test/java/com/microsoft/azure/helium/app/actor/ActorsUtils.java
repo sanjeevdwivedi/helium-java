@@ -1,15 +1,16 @@
 package com.microsoft.azure.helium.app.actor;
 
 import java.io.File;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.microsoft.azure.helium.app.movie.Movie;
+//import com.microsoft.azure.helium.app.movie.Movie;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;
 
@@ -33,7 +34,7 @@ public class ActorsUtils {
     public static String expectedActorResponse() throws IOException, ParseException{
         File file = readFile();
         FileReader reader = new FileReader(file);
-        JSONParser jsonParser = new JSONParser();
+        JSONParser jsonParser = new JSONParser(JSONParser.MODE_PERMISSIVE);
         Object obj = jsonParser.parse(reader);
         return obj.toString();
     }

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<helium>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.microsoft.azure.helium.Application",
+            "projectName": "helium",
+            "args": ""
+        }
+    ]
+}

@@ -13,7 +13,7 @@ import net.minidev.json.annotate.JsonIgnore;
 import org.springframework.data.annotation.Id;
 
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
+//import lombok.EqualsAndHashCode;
 import lombok.Getter;
 
 /**
@@ -21,7 +21,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-@EqualsAndHashCode
+//@EqualsAndHashCode
 @Document(collection = Constants.DEFAULT_ACTOR_COLLECTION_NAME)
 
 @JsonPropertyOrder({"id","actorId", "partitionKey",  "name", "birthYear", "profession", "type", "textSearch", "movies"})

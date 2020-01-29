@@ -1,5 +1,5 @@
 package com.microsoft.azure.helium.app.movie;
-import static com.microsoft.azure.helium.app.movie.MoviesUtils.expectedMovieResponse;
+//import static com.microsoft.azure.helium.app.movie.MoviesUtils.expectedMovieResponse;
 import static com.microsoft.azure.helium.app.movie.MoviesUtils.generateMovies;
 import static org.hamcrest.Matchers.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -13,13 +13,13 @@ import java.util.Optional;
 import java.util.UUID;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.skyscreamer.jsonassert.JSONAssert;
+//import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
+//import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 /**
  * MoviesControllerTest
@@ -39,9 +39,10 @@ public class MoviesControllerTest {
 
         List<Movie> mockMovies = generateMovies();
         when(service.getAllMovies(any(), any(), any(), any(), any(), any(), any(), any())).thenReturn(mockMovies);
-        String expected = expectedMovieResponse();
+        //String expected = expectedMovieResponse();
 
-        MvcResult result = this.mockMvc
+        //MvcResult result = 
+        this.mockMvc
                 .perform(get("/api/movies").param("pageNumber", "1").param("pageSize", "100"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(100)))

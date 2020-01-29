@@ -3,12 +3,12 @@ package com.microsoft.azure.helium.app.movie;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.microsoft.azure.helium.app.actor.Actor;
+//import com.microsoft.azure.helium.app.actor.Actor;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;
 
@@ -33,7 +33,7 @@ public class MoviesUtils {
     public static String expectedMovieResponse() throws IOException, ParseException{
         File file = readFile();
         FileReader reader = new FileReader(file);
-        JSONParser jsonParser = new JSONParser();
+        JSONParser jsonParser = new JSONParser(JSONParser.MODE_PERMISSIVE);
         Object obj = jsonParser.parse(reader);
         return obj.toString();
     }

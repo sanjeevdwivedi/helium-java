@@ -85,7 +85,7 @@ public class HealthzController {
             healthChecks.put("getTopRatedMovie", runHealthChecksOnEndpoints("/api/movies?toprated=true", 400));
 
             for(Map.Entry<String, HashMap<String, String>> entry : healthChecks.entrySet()) {
-                HashMap check = entry.getValue();
+                HashMap<String,String> check = entry.getValue();
                 if (check.containsKey(IeTfStatus.up.name())) {
                     ieTfResult.put("status", IeTfStatus.up.name());
                 }
